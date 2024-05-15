@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #d5d7d9;
+}
+
+.nav-center {
+    box-shadow: 1px 2px 18px 3px gray;
+    background-color: white;
+}
+
+.nav-toggle {
+    position: relative;
+    left: 30%;
+    display: inline;
+    color: #3c9ed3;
+    border: none;
+}
+
+.links {
+    margin-left: 30px;
+}
+
+.links li {
+    margin: 10px;
+}
+
+.links a {
+    font-size: 20px;
+    color: black;
+}
+
+.links a:hover {
+    background-color: blanchedalmond;
+    color: crimson;
+}
+
+.social-icons a {
+    color: #3c9ed3;
+
+}
+
+.social-icons {
+    display: none;
+}
+
+/* bby default hide links */
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+/* tiggle links */
+.show-links {
+    height: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-center {
+        max-width: 1550px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-header {
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links {
+        height: auto;
+        display: flex;
+    }
+
+    .links a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+    }
+}
